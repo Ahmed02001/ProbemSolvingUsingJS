@@ -11,12 +11,26 @@ If there is nothing to sum, the sum is default to 0.
 */
 // var arr = [-7,41,23,-70,48,43,68,-90,32,1,39,17,-52,-16,72,-86,-44,-37,-32,89,67,22,-67];
 
-var arr = [];
-var sum = 0;
-for (let i = 0; i < arr.length; i++) {
+//way 1
 
-  if(arr[i] > 0)
-    sum += arr[i];
+// function SumOfPositiveNumber(arr){
+//   var sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+    
+//     if(arr[i] > 0)
+//       sum += arr[i];
+//   }
+//   return sum;
+// }
+
+// var arr = [];
+
+// console.log(SumOfPositiveNumber(arr));
+
+//way 2
+function SumOfPositiveNumber(arr){
+  return arr.filter(x => x > 0).reduce((acc, current) => acc + current, 0);
 }
 
-console.log(sum);
+
+console.log(SumOfPositiveNumber([1, 5, 4, -3, -6, -2]));
