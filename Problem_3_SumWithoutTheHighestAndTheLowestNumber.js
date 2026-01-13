@@ -4,6 +4,8 @@ Sum all the numbers of a given array ( cq. list ), except the highest and the lo
 The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
 
 Mind the input validation.
+
+ /// link for this problem on codewares   https://www.codewars.com/kata/576b93db1129fcf2200001e6
 */
 /*
  [1]. Check if array is null return 0

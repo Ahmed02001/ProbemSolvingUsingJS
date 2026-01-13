@@ -2,6 +2,8 @@
   Write a function that accepts a non-negative integer
  n and a string s as parameters, and returns a string of s repeated exactly n times.
 
+ /// link for this problem on codewares   https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
+
 */
 //way 1
 function RepeatStr(n, str){
