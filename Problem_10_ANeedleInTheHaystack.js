@@ -18,9 +18,8 @@
 function findNeedle(array){
   for (let i = 0; i < array.length; i++) {
     if(array[i] == 'needle')
-      return i;
+      return "found the needle at position " + i;
   }
-  return false;
 }
 
 // var arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
@@ -29,12 +28,12 @@ function findNeedle(array){
 
 var arr = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]
 
-console.log("found the needle at position " + findNeedle(arr))
+console.log(findNeedle(arr))
 
 
 //way 2
 function findNeedle(array){
-  return "found the needle at position" + array.indexOf('needle') ;
+  return "found the needle at position " + array.indexOf('needle') ;
 }
 
 console.log(findNeedle(arr));
