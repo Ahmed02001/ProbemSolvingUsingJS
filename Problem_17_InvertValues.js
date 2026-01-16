@@ -8,14 +8,21 @@
 
 // link    https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
 
-
+// way 1
 
 function invert(array) {
-  var arr = [];
    for (let i = 0; i < array.length; i++) {
       array[i] = array[i] * -1;
    }
    return array;
+}
+
+console.log(invert([1, 2, -3, 4, -5]))
+
+
+// way 2
+function invert(array) {
+   return array.map(x => -x);
 }
 
 console.log(invert([1, 2, -3, 4, -5]))
